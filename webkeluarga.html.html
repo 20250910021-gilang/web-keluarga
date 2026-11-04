@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Keluarga AGS</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #2c3e50;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-muted: #666666;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+            color: var(--text-main);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        /* Header Styling */
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            margin: 0;
+            font-weight: 300;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        /* Seksi Foto Profil Sekeluarga */
+        .family-photo-section {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .family-photo-container {
+            width: 200px; /* Ukuran bingkai foto */
+            height: 200px;
+            border-radius: 50%; /* Membuat bingkai menjadi lingkaran */
+            border: 5px solid #e1e8ed; /* Warna dan tebal bingkai */
+            margin: 0 auto 15px auto; /* Meratakan ke tengah dan memberi jarak bawah */
+            overflow: hidden; /* Memastikan foto tetap di dalam lingkaran */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f9fbfd;
+        }
+
+        .family-photo-container img {
+            width: 100%; /* Foto memenuhi lebar bingkai */
+            height: 100%; /* Foto memenuhi tinggi bingkai */
+            object-fit: cover; /* Foto dipotong agar pas tanpa distorsi */
+        }
+
+        /* Card Styling */
+        .card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: var(--secondary-color);
+            border-bottom: 2px solid #e1e8ed;
+            padding-bottom: 10px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .parents-grid {
+            display: flex;
+            gap: 30px;
+        }
+
+        .parents-box {
+            flex: 1;
+            background: #f9fbfd;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #eef2f5;
+        }
+
+        .parents-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .info-item {
+            margin-bottom: 12px;
+            font-size: 0.95em;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .info-item i {
+            color: var(--primary-color);
+            width: 20px;
+            text-align: center;
+            margin-top: 3px;
+        }
+
+        .address-box {
+            background: #eef2f5;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .parents-grid {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Biodata Keluarga</h1>
+            <p><i class="fas fa-home"></i> Keluarga Besar AGS FAMILY</p>
+        </div>
+
+        <!-- Seksi Foto Profil Sekeluarga -->
+        <div class="family-photo-section">
+            <div class="family-photo-container">
+                <!-- GANTI SOURCE DI BAWAH INI DENGAN LINK FOTO KELUARGA ANDA -->
+                <img src=".html/src=foto-keluarga.jpeg.jpeg" alt="Foto Profil Keluarga AGS FAMILY">
+            </div>
+            <p><strong>Keluarga Besar AGS FAMILY</strong></p>
+        </div>
+
+        <!-- Data Orang Tua -->
+        <div class="card">
+            <h2><i class="fas fa-user-friends"></i> Data Orang Tua</h2>
+            <div class="parents-grid">
+                <div class="parents-box">
+                    <h3>Ayah</h3>
+                    <div class="info-item"><i class="fas fa-id-card"></i> <div><b>Nama:</b> Agus Suroso</div></div>
+                    <div class="info-item"><i class="fas fa-briefcase"></i> <div><b>Pekerjaan:</b> Wirausaha</div></div>
+                    <div class="info-item"><i class="fas fa-birthday-cake"></i> <div><b>TTL:</b> Kuningan, 24 Juni 1983</div></div>
+                </div>
+                <div class="parents-box">
+                    <h3>Ibu</h3>
+                    <div class="info-item"><i class="fas fa-id-card"></i> <div><b>Nama:</b> Nany Mustikasari</div></div>
+                    <div class="info-item"><i class="fas fa-heart"></i> <div><b>Pekerjaan:</b> Ibu Rumah Tangga</div></div>
+                    <div class="info-item"><i class="fas fa-birthday-cake"></i> <div><b>TTL:</b> Jakarta, 19 Desember 1982</div></div>
+                </div>
+            </div>
+            
+            <div class="address-box">
+                <div class="info-item" style="margin-bottom: 0;">
+                    <i class="fas fa-map-marker-alt" style="color: #e74c3c;"></i> 
+                    <div><b>Alamat Rumah:</b> Jl. Cikeusik, Kec. Cidahu, Kab. Kuningan</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Anak Pertama -->
+        <div class="card">
+            <h2><i class="fas fa-child"></i> Anak Pertama (Sulung)</h2>
+            <div class="info-item"><i class="fas fa-id-badge"></i> <div><b>Nama Lengkap:</b> Andini Yulianti</div></div>
+            <div class="info-item"><i class="fas fa-comment"></i> <div><b>Nama Panggilan:</b> Andin</div></div>
+            <div class="info-item"><i class="fas fa-venus"></i> <div><b>Jenis Kelamin:</b> Perempuan</div></div>
+            <div class="info-item"><i class="fas fa-birthday-cake"></i> <div><b>TTL:</b> Kuningan, 2 Juni 2002</div></div>
+            <div class="info-item"><i class="fas fa-laptop-house"></i> <div><b>Pekerjaan:</b> Bekerja</div></div>
+            <div class="info-item"><i class="fas fa-running"></i> <div><b>Hobi:</b> Stretching</div></div>
+        </div>
+
+        <!-- Anak Kedua -->
+        <div class="card">
+            <h2><i class="fas fa-child"></i> Anak Kedua</h2>
+            <div class="info-item"><i class="fas fa-id-badge"></i> <div><b>Nama Lengkap:</b> Gilang Nur Ramadhani</div></div>
+            <div class="info-item"><i class="fas fa-comment"></i> <div><b>Nama Panggilan:</b> Iyang</div></div>
+            <div class="info-item"><i class="fas fa-mars"></i> <div><b>Jenis Kelamin:</b> Laki-laki</div></div>
+            <div class="info-item"><i class="fas fa-birthday-cake"></i> <div><b>TTL:</b> Kuningan, 6 Oktober 2006</div></div>
+            <div class="info-item"><i class="fas fa-graduation-cap"></i> <div><b>Pendidikan:</b> Mahasiswa</div></div>
+            <div class="info-item"><i class="fas fa-swimmer"></i> <div><b>Hobi:</b> Renang</div></div>
+        </div>
+
+        <!-- Anak Ketiga -->
+        <div class="card">
+            <h2><i class="fas fa-child"></i> Anak Ketiga (Bungsu)</h2>
+            <div class="info-item"><i class="fas fa-id-badge"></i> <div><b>Nama Lengkap:</b> Muhamad Surya Sumirat</div></div>
+            <div class="info-item"><i class="fas fa-comment"></i> <div><b>Nama Panggilan:</b> Arya</div></div>
+            <div class="info-item"><i class="fas fa-mars"></i> <div><b>Jenis Kelamin:</b> Laki-laki</div></div>
+            <div class="info-item"><i class="fas fa-birthday-cake"></i> <div><b>TTL:</b> Kuningan, 20 Juni 2011</div></div>
+            <div class="info-item"><i class="fas fa-school"></i> <div><b>Pendidikan:</b> SMK</div></div>
+            <div class="info-item"><i class="fas fa-futbol"></i> <div><b>Hobi:</b> Sepak Bola</div></div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Website Profil Keluarga AGS FAMILY. Didesain dengan <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+        </footer>
+    </div>
+
+</body>
+</html>
